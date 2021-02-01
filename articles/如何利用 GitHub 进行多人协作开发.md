@@ -21,6 +21,7 @@ git add .
 git commit -m "feat: my branch" 
 git push --set-upstream origin feat-my-branch
 ```
+![image](https://github.com/TGuoW/blog/blob/master/image/pr.jpg)
 
 3. 经过`Code Review`后（CR过程中，如果有任何的建议或者讨论点，最好都在当前pr下讨论），代码合并到`dev`分支（为保证远端分支比较干净，合入后建议将当前分支删除）。
 
@@ -41,11 +42,13 @@ git merge origin/dev
 // 可能会出现冲突，解决掉后
 git commit
 ```
-看一个完全是用merge进行代码合并的项目，分支线极其恶心
+看一个完全是用merge进行代码合并的项目，分支线非常复杂
+
+![image](https://github.com/TGuoW/blog/blob/master/image/git1.jpg)
 
 优点：代码的历史记录不会被改变
 
-缺点：分支线极其复杂，几乎不可读
+缺点：分支线几乎不可读
 
 ### rebase 
 ```
@@ -62,6 +65,7 @@ git rebase --abort
 ```
 而使用rebase进行代码合并的项目，整体的分支线非常的清晰明了。
 
+![image](https://github.com/TGuoW/blog/blob/master/image/git2.png)
 
 rebase 之后，可能会导致代码无法push上去，出现报错。此时就需要`git push -f`，但是这个要慎用，保证这个分支上只有你自己在开发，或者，你本地的代码是Ok的，可以覆盖远端的代码。
 
