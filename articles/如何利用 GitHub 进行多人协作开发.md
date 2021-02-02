@@ -1,3 +1,4 @@
+# 如何利用 GitHub 进行多人协作开发
 
 ## 分支设置
 在我的项目中，存在两个核心分支`dev`和`master`，可能有的项目还存在`release`。每个迭代流程中，都会将`dev`的代码合入到`master`。
@@ -21,11 +22,15 @@ git add .
 git commit -m "feat: my branch" 
 git push --set-upstream origin feat-my-branch
 ```
-![image](https://github.com/TGuoW/blog/blob/master/image/pr.jpg)
+<img src="https://github.com/TGuoW/blog/blob/master/image/pr.jpg" />
 
-3. 经过`Code Review`后（CR过程中，如果有任何的建议或者讨论点，最好都在当前pr下讨论），代码合并到`dev`分支（为保证远端分支比较干净，合入后建议将当前分支删除）。
+3. `Code Review`，提交PR后，需要有专人进行CR，在此过程中，如果有任何的建议或者讨论点，最好都在当前pr下讨论，开发者按照CR建议修改代码
 
-4. 之后，仓库主要维护者会按照正常迭代节奏将你的代码逐步合入到`master`分支。
+4. CR后，点击merge按钮，代码合并到`dev`分支（为保证远端分支比较干净，合入后建议将当前分支删除）。
+
+<img src="https://github.com/TGuoW/blog/blob/master/image/merge.png" width="400" />
+
+5. 之后，仓库主要维护者会按照正常迭代节奏将你的代码逐步合入到`master`分支。
 
 
 多人开发时，可能在A开发过程中，B往`dev`合入了新的代码，那么A想要将B的代码拉取到自己的开发分支，通常有两种操作`merge`和`rebase`，两者各有优缺点。
@@ -44,11 +49,11 @@ git commit
 ```
 看一个完全是用merge进行代码合并的项目，分支线非常复杂
 
-![image](https://github.com/TGuoW/blog/blob/master/image/git1.jpg)
+<img src="https://github.com/TGuoW/blog/blob/master/image/git1.jpg" width="400" />
 
 优点：代码的历史记录不会被改变
 
-缺点：分支线几乎不可读
+缺点：分支时间线几乎不可读
 
 ### rebase 
 ```
@@ -65,10 +70,10 @@ git rebase --abort
 ```
 而使用rebase进行代码合并的项目，整体的分支线非常的清晰明了。
 
-![image](https://github.com/TGuoW/blog/blob/master/image/git2.png)
+<img src="https://github.com/TGuoW/blog/blob/master/image/git2.png" width="100" />
 
 rebase 之后，可能会导致代码无法push上去，出现报错。此时就需要`git push -f`，但是这个要慎用，保证这个分支上只有你自己在开发，或者，你本地的代码是Ok的，可以覆盖远端的代码。
 
-优点：分支线可读
+优点：分支时间线可读
 
 缺点：会丢失commit原始数据，某些代码可能找人背锅的时候会找不到:D。此外，rebase时可能会出现多次冲突，此时需要一个一个解决。
