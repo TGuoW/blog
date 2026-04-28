@@ -1,0 +1,95 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "data": [
+      [
+        "首页输入框",
+        null,
+        [
+          "无需改动"
+        ],
+        null,
+        null
+      ],
+      [
+        "创建 worktree 拦截",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "DiffView 改造",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "AI Merge / Resolve UI",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "AI 总结产物",
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "field_id_list": [
+      "fld0qtViJI",
+      "fldgbtJKUj",
+      "fldfvhPxrJ",
+      "fldRU004BV",
+      "fldqTzQ4F3"
+    ],
+    "fields": [
+      "文本",
+      "负责人",
+      "状态",
+      "备注",
+      "父记录"
+    ],
+    "has_more": false,
+    "query_context": {
+      "field_scope": "view_visible_fields",
+      "record_scope": "view_filtered_records"
+    },
+    "record_id_list": [
+      "rec27i2bEMsbeW",
+      "rec27i2bEMsgj6",
+      "rec27i2bEMskHa",
+      "rec27i2bEMsoGV",
+      "recvi0zT1CYKfM",
+      "recvi0zNbk3P70",
+      "rec27i2bEMsrYs",
+      "recvi0zJAoz4Z1"
+    ]
+  }
+}

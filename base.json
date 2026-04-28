@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "base": {
+      "base_token": "Gv2pbnlk4aHfPHsmPVoctMVBnMf",
+      "is_advanced": false,
+      "name": "",
+      "revision": 0,
+      "time_zone": "Asia/Shanghai",
+      "url": "https://bytedance.larkoffice.com/base/Gv2pbnlk4aHfPHsmPVoctMVBnMf"
+    }
+  }
+}

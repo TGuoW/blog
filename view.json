@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "view": {
+      "id": "vewTgVIt04",
+      "name": "表格",
+      "type": "grid"
+    }
+  }
+}

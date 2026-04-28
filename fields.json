@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "identity": "user",
+  "data": {
+    "fields": [
+      {
+        "id": "fldfvhPxrJ",
+        "multiple": false,
+        "name": "状态",
+        "options": [
+          {
+            "hue": "Blue",
+            "lightness": "Lighter",
+            "name": "无需改动"
+          }
+        ],
+        "type": "select"
+      },
+      {
+        "id": "fldRU004BV",
+        "name": "备注",
+        "style": {
+          "type": "plain"
+        },
+        "type": "text"
+      },
+      {
+        "bidirectional": false,
+        "id": "fldqTzQ4F3",
+        "link_table": "tblT7xQpNMb2u8s7",
+        "name": "父记录",
+        "type": "link"
+      },
+      {
+        "id": "fld0qtViJI",
+        "name": "文本",
+        "style": {
+          "type": "plain"
+        },
+        "type": "text"
+      },
+      {
+        "id": "fldgbtJKUj",
+        "multiple": false,
+        "name": "负责人",
+        "type": "user"
+      }
+    ],
+    "total": 5
+  }
+}
